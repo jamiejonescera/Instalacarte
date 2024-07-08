@@ -1,0 +1,141 @@
+/* Style for the body and font */
+body, h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-size: 16px;
+}
+
+/* Sidebar style */
+.w3-sidebar {
+  z-index: 3;
+  width: 300px;
+  font-weight: bold;
+  background-color: #f44336; /* Red background */
+}
+.w3-sidebar a {
+  font-size: 18px;
+  color: white;
+  padding: 10px 16px;
+}
+.w3-sidebar a:hover {
+  background-color: white;
+  color: #f44336; /* Red text on hover */
+}
+
+/* Top menu for small screens */
+.w3-top {
+  background-color: #f44336; /* Red background */
+}
+.w3-top a {
+  color: white;
+}
+
+/* Main content style */
+.w3-main {
+  margin-left: 340px;
+  margin-right: 40px;
+}
+.w3-main h1 {
+  font-size: 3em;
+  color: #f44336; /* Red text */
+}
+.w3-main hr {
+  width: 50px;
+  border: 5px solid #f44336; /* Red border */
+  border-radius: 5px;
+}
+
+/* Grid images */
+.w3-half img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.w3-half img:hover {
+  opacity: 1;
+}
+
+/* Modal style */
+.w3-modal-content {
+  animation: zoomIn 0.6s;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Service section */
+#services p {
+  line-height: 1.6;
+}
+
+/* Designers section */
+#designers p {
+  line-height: 1.6;
+}
+
+/* Team section */
+.w3-light-grey img {
+  width: 100%;
+}
+.w3-light-grey .w3-container {
+  padding: 16px;
+}
+
+/* Packages section */
+.w3-ul {
+  margin-bottom: 16px;
+}
+.w3-ul li {
+  padding: 16px;
+}
+.w3-ul .w3-dark-grey {
+  background-color: #333;
+  color: white;
+}
+.w3-ul .w3-red {
+  background-color: #f44336;
+  color: white;
+}
+.w3-ul .w3-light-grey {
+  background-color: #f1f1f1;
+}
+
+/* Contact form */
+form .w3-section {
+  margin-bottom: 16px;
+}
+form .w3-section label {
+  margin-bottom: 8px;
+}
+form .w3-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form .w3-button {
+  width: 100%;
+  padding: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form .w3-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Footer */
+.w3-light-grey .w3-right {
+  color: #757575;
+}
+.w3-light-grey .w3-hover-opacity:hover {
+  opacity: 0.6;
+}
