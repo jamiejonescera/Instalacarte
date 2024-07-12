@@ -7,6 +7,34 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
+    .center-image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid #000; /* Optional: add a border to the circle */
+}
+
+.circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:5px;opacity:0.8;cursor:pointer}
@@ -338,10 +366,6 @@ body {font-size:16px;}
 </div> 
 
 
-
-
-
-
        <!-- Inviting Investors -->
   <div class="w3-container" id="Inviting Investors" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Inviting Investors.</b></h1>
@@ -379,10 +403,10 @@ body {font-size:16px;}
         <table style="width: 100%; margin: 0 auto;">
           <tr>
             <td style="width: 50%; text-align: center;">  
-              <img src="img/1.png" alt="Header Image" style="width: 70%; display: block; margin-left: 30%; margin-right: 0;">
+              <img src="img/post1.jpg" alt="Header Image" style="width: 70%; display: block; margin-left: 30%; margin-right: 0;">
             </td>
             <td style="width: 50%; vertical-align: middle;">
-              <img src="img/2.png" alt="Header Image" style="width: 70%; display: block; margin-left: 0%; margin-right: 0;">
+              <img src="img/post2.png" alt="Header Image" style="width: 70%; display: block; margin-left: 0%; margin-right: 0;">
             </td>
           </tr>
         </table>
@@ -391,11 +415,9 @@ body {font-size:16px;}
 <br>
 <br>
 
-<div style="text-align: justify; font-size: 22px;">
-  <p>Posted Initial events
-    
-    </p>
-
+    <div style="text-align: center; font-size: 28px;">
+      <p>Posted Initial events on Facebook </p>
+    </div>
     <br>
       <table style="width: 100%;">
         <tr>
@@ -410,118 +432,454 @@ body {font-size:16px;}
           </td>
         </tr>
       </table>
+
+      <br>
+      <br>
+      <div style="text-align: center; font-size: 28px;">
+        <p>We also created formal letters to invite our investors.<br>Here is a sample Invitation Letter for Ms. Rhea Tornea</p>
+      </div> 
+
+      <div style="text-align: center;">
+        <img src="img/Inv.jpg" alt="Header Image" style="width: 60%; display: block; margin: 0 auto;">
+      </div>
+
+<br>
+<br>      
+      <div style="text-align: center; font-size: 28px;">
+        <p>After promoting the event, 10 Business people/Investors <br>has reponded to our invitation.
+          <br>The Pitching was set to be online since some investors are abroad and <br>while some are from other parts of the counrty.
+        </p>
+
+      </div> 
       
-           
+      
   <!-- Pitching & Presentation -->
   <div class="w3-container" id="Pitching & Presentation" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Pitching & Presentation.</b></h1>
     <hr style="width:50px;border:5px solid rgb(0, 179, 255)" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+  </div>
+  <div style="text-align: left; font-size: 28px;">
+    <p>June 17, 2024<br>3:00 - 4:00pm<br>Online Zoom Pitching<br>Instalacarte Pitching and Presentation</p>
+  </div> 
+
+
+  <div style="text-align: center; font-size: 28px;">
+    <p>Here are some of the Attended Investors</p>
+  </div> 
+
+  <div style="text-align: center;">
+    <img src="img/Investors.png" alt="Header Image" style="width: 100%; display: block; margin: 0 auto;">
+  </div>
+
+  <div style="text-align: center; font-size: 28px;">
+    <p><b>Slideshow Presented</b></p>
+  </div> 
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      .slideshow-container {
+        position: relative;
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+      }
+      .mySlides {
+        display: none;
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="slideshow-container">
+    <!-- The slides -->
+    <div class="mySlides">
+      <img src="img/1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/10.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/11.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/12.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/13.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/14.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/15.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/16.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/17.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/18.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/19.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+  
+    function plusSlides(n) {
+      slideIndex += n;
+      showSlides();
+    }
+  
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      if (slideIndex >= slides.length) {slideIndex = 0}
+      if (slideIndex < 0) {slideIndex = slides.length - 1}
+      slides[slideIndex].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  
+  </body>
+  </html>
+
+    <style>
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      video {
+        width: 80%;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center;">
+      <p style="font-size: 28px; margin-bottom: 10px;"><b>Online Zoom Pitching Part 1.</b></p>
+      <video controls style="width: 80%; max-width: 800px;">
+        <source src="img/Instalacarte.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+  </body>
+
+
+  
+
+  <div style="text-align: justify; font-size: 28px;">
+    <p>The pitching was good and went well. 
+      We came to the part where we had to demonstrate Instalacarte, and did the part to defend it.</p>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container2" style="position: relative; text-align: center; margin: auto; max-width: 1000px;">
+
+  <div class="mySlides2">
+    <img src="img/demo1.png" style="width:70%; margin: auto;">
+  </div>
+  <div class="mySlides2">
+    <img src="img/demo.2.png" style="width:70%; margin: auto;">
+  </div>
+  <div class="mySlides2">
+    <img src="img/demo3.png" style="width:70%; margin: auto;">
+  </div>
+  <div class="mySlides2">
+    <img src="img/demo4.png" style="width:70%; margin: auto;">
+  </div>
+  
+  <!-- Next and previous buttons -->
+  <a class="prev2" style="cursor: pointer; position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: black; font-weight: bold; font-size: 24px; padding: 16px; background: rgba(255, 255, 255, 0.5); border-radius: 0 3px 3px 0;" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next2" style="cursor: pointer; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); color: black; font-weight: bold; font-size: 24px; padding: 16px; background: rgba(255, 255, 255, 0.5); border-radius: 3px 0 0 3px;" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+
+<script>
+  let slideIndex2 = 0;
+  showSlides2();
+
+  function showSlides2() {
+    let slides2 = document.getElementsByClassName("mySlides2");
+    for (let i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+    slides2[slideIndex2-1].style.display = "block";
+    setTimeout(showSlides2, 5000); // Change image every 3 seconds
+  }
+
+  function plusSlides2(n) {
+    slideIndex2 += n - 1; // Adjust for the showSlides2 auto-increment
+    showSlides2();
+  }
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+  <div style="text-align: justify; font-size: 28px;">    
+      However, the online segment to answer the questions stopped 
+      due to zoom 40 min limit. But at the end we continued the meet on another link and proceeded to the offer 
+      where we had to give 20% of ownership of the revenue in exchange of the P 35,800.00 just incase 
+      there will be another investor/s to take share of the investment.(e.g. 20% of equity will be divided for 2 investors, who would like to invest.)
+<br>
+<br>
+  <div style="text-align: center;">
+    <img src="img/proje.jpg" alt="Header Image" style="width: 70%; display: block; margin: 0 auto;">
+  </div>
+<br>
+<br>
+
+
+
+      We discussed and assured to the investors the financial projections and a passive income share of 20% shares of the monthly revenue.
+  </p>
+</div>
+
+
+  </div>
+  <div style="text-align: center;">
+    <img src="img/35.jpg" alt="Header Image" style="width: 60%; display: block; margin: 0 auto;">
   </div>
 
 
+
+  <div style="text-align: center;">
+    <table style="width: 100%; margin: 0 auto;">
+      <tr>
+        <td style="width: 33%; text-align: center;">  
+          <img src="img/a.png" alt="Header Image" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+          <img src="img/b.jpg" alt="Header Image" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+          <img src="img/c.jpg" alt="Header Image" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
   <!-- Investment -->
   <div class="w3-container" id="Investment" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Investment.</b></h1>
     <hr style="width:50px;border:5px solid rgb(0, 179, 255)" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Success</p>
   </div>
+
+
+  <p style="text-align: justify; font-size: 28px;">    
+ After further discussion on the equity: the investors/busnesswoman Roann Brillante & Venus Mangaoang decided to invest by spliting the P 35,800.00.
+
+</p>
+
+<div style="text-align: center;">
+  <img src="img/ty.png" alt="Header Image" style="width: 100%; display: block; margin: 0 auto;">
+</div>
+
+<br>    
+<hr style="width: 100%; border: 2px solid rgb(0, 2, 96);">
+<br>
+<p style="text-align: justify; font-size: 28px;">    
+    At the end, Ms. Roann Brillante & Ms. Venus Mangaoang were willing to invest P 17,900.00 each for the equity of a monthly share of 10% each. 
+</p>
+    <div style="text-align: center;">
+      <img src="img/rv.png" alt="Header Image" style="width: 50%; display: block; margin: 0 auto;">
+    </div>
+
+<p style="text-align: justify; font-size: 28px;">   
+   <br>We had thanked Ms. Brillante and Ms. Mangaoang for the opportunity as the product will also be beneficial for them as a passive income.
+   We also thanked all investors who took the time so that we may share Instalacarte and its goal for restaurants and cafe. 
+</p>
+
+<hr style="width: 100%; border: 2px solid rgb(0, 2, 96);">
+
+<p style="text-align: center; font-size: 28px;">   
+  We are the group 3, and we enjoyed how we implemented and applied the concept of <br><b>Pitching & Presentation</b>.
+</p>
+
 
   <!-- About Us -->
   <div class="w3-container" id="About Us" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>About Us.</b></h1>
     <hr style="width:50px;border:5px solid rgb(0, 179, 255)" class="w3-round">
-    <p>Pitching and Presentation</p>
+    <p style="font-size: 28px">Pitching and Presentation</p>
     <p></p>
-    <p><b>Group 3</b>:</p>
+    <p style="font-size: 28px;"><b>Group 3</b>:</p>
   </div>
 
-   <!-- The Team -->
+   <  <!-- The Team -->
    <div class="w3-row-padding">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px; ">
-        <img src="Teams/" alt="Jam" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Jamie Jones Cera</h3>
-          <p class="w3-opacity">Leader</p>
-          <a href="https://www.linkedin.com/in/jamie-jones-cera-b71222230/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" >https://www.linkedin.com/in/jamie-jones-cera-b71222230/</a>
-
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\Franco.png" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Franco Luis Rosel</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/franco-luis-rosel-7263b6304//" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/franco-luis-rosel-7263b6304/</a>
-
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\Earl.png" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Earl</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/kyla-keith-baledoya-367887302/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/kyla-keith-baledoya-367887302/</a>
-
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\Jefff.jpg" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Jeff</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/kyla-keith-baledoya-367887302/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/kyla-keith-baledoya-367887302/</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\KCC.png" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>KC</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/kirsten-charles-domingo-958a90302/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/kirsten-charles-domingo-958a90302/</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\Kyla.png" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Kyla</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/kyla-keith-baledoya-367887302/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/kyla-keith-baledoya-367887302/</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom" >
-      <div class="w3-light-grey" style="padding-top: 20px;">
-        <img src="Teams\Sofia.png" alt="John" style="width:200px; height:200px; display: block; margin-left: auto; margin-right: auto;" >
-        <div class="w3-container">
-          <h3>Kyla</h3>
-          <p class="w3-opacity">Member</p>
-          <a href="https://www.linkedin.com/in/silvestre-matillano-981405306/" target="_blank" style="color: black;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">https://www.linkedin.com/in/silvestre-matillano-981405306/</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+     <div class="w3-col m4 w3-margin-bottom"  style="margin: 0 auto; text-align: center; width: 100%;">
+         <div class="circle-container">
+           <div class="w3-light-grey">
+             <img src="Teams\Jam.png" class="center-image">
+           </div>
+         </div>
+         <div class="w3-container" >
+           <br>
+           <p style="margin: 0 auto; width: 19%;">Jamie Jones P. Cera   
+            <a href="https://www.linkedin.com/in/jamie-jones-cera-b71222230/"><br>
+              <img src="img\Logoz.png" style="width:25px; height:25px"></img></a></p>
+         </div>
+     </div>
  
-
-<!-- End page content -->
+     <div class="w3-row-padding">
+       <div class="w3-col m4 w3-margin-bottom">
+           <div class="circle-container">
+             <div class="w3-light-grey">
+               <img src="Teams\Sofia.png" class="center-image">
+             </div>
+           </div>
+           <div class="w3-container" >
+             <br>
+             <p style="margin: auto; text-align: center; width: 70%;">Silvestre Jr. Matillano<a href="https://www.linkedin.com/in/silvestre-matillano-981405306/"><br>
+                <img src="img\Logoz.png" style="width:25px; height:25px; "></img></a></p>
+           </div>
+       </div>
+       <div class="w3-col m4 w3-margin-bottom">
+         <div class="circle-container">
+           <div class="w3-light-grey">
+             <img src="Teams\Franco.png" class="center-image">
+           </div>
+         </div>
+         <div class="w3-container" >
+           <br>
+           <p style="margin: 0 auto; text-align: center; width: 60%;">Franco Luis C. Rosel<a href="https://www.linkedin.com/in/franco-luis-rosel-7263b6304/"><br>
+            <img src="img\Logoz.png" style="width:25px; height:25px"></img></a></p>
+         </div>
+       </div>
+       <div class="w3-col m4 w3-margin-bottom">
+         <div class="circle-container">
+           <div class="w3-light-grey">
+             <img src="Teams\Earl.png" class="center-image">
+           </div>
+         </div>
+         <div class="w3-container" >
+           <br>
+           <p style="margin: 0 auto; text-align: center; width: 60%;">Earl Jeruel U. Toribio<a href="https://www.linkedin.com/in/earl-jeruel-toribio/"><br>
+            <img src="img\Logoz.png" style="width:25px; height:25px"></img></a></p>
+         </div>
+       </div>
+     </div>
+ 
+     <div class="w3-row-padding">
+       <div class="w3-col m4 w3-margin-bottom">
+           <div class="circle-container">
+             <div class="w3-light-grey">
+               <img src="Teams\Jefff.jpg" class="center-image">
+             </div>
+           </div>
+           <div class="w3-container" >
+             <br>
+             <p style="margin: 0 auto; text-align: center; width: 59%;">Jefferson F. Ballera<a href="https://www.linkedin.com/in/jefferson-ballera-582477303/"><br>
+              <img src="img\Logoz.png" style="width:25px; height:25px"></img></a></p>
+           </div>
+       </div>
+       <div class="w3-col m4 w3-margin-bottom">
+         <div class="circle-container">
+           <div class="w3-light-grey">
+             <img src="Teams\KCC.png" class="center-image">
+           </div>
+         </div>
+         <div class="w3-container" >
+           <br>
+           <p style="margin: 0 auto; text-align: center; width: 100%;">Kirsten Charles P. Domingo<a href="https://www.linkedin.com/in/kirsten-charles-domingo-958a90302/"><br>
+            <img src="img\Logoz.png" style="width:25px; height:25px"></img></a></p>
+ 
+         </div>
+       </div>
+       <div class="w3-col m4 w3-margin-bottom">
+         <div class="circle-container">
+           <div class="w3-light-grey">
+             <img src="Teams\Kyla.png" class="center-image">
+           </div>
+         </div>
+         <div class="w3-container" >
+           <br>
+           <p style="margin: 0 auto; text-align: center; width: 100%;">Kyla Keith I. Baledoya   <a href="https://www.linkedin.com/in/kyla-keith-baledoya-367887302/"><br>
+            <img src="img\Logoz.png" style="width:25px; 25px"></img></a></p>
+         </div>
+       </div>
+     </div>
+ 
+   </div>
+ 
+ 
+     
+     
+   </div>
+ 
+  
+ 
+ <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
