@@ -18,8 +18,9 @@
       of pitching and presenting a software application idea. The invited investors and businesspeople 
       were also informed of the activity. No financial transactions were involved, and we do not claim ownership of Instalacarte or 
       intend to profit from it. All credit for the original idea goes to Instalacarte and its creators.</p>
-    <button onclick="agreeToDisclaimer()">I Agree</button>
-    <button onclick="exitSite()">I Do Not Agree</button>
+      <button onclick="exitSite()">Nevermind</button>
+      <button onclick="agreeToDisclaimer()">Got it!</button>
+
   </div>
 </div>
 
@@ -72,9 +73,7 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 
 
-.modal {
-      transition: transform 0.2s ease-out;
-    }
+
 </style>
 </head>
 <body>
@@ -145,9 +144,10 @@ body {font-size:16px;}
       <p style= "text-align: justify; font-size: 28px;">
         "This is "Shark Tank". It is a TV show where entrepreneurs pitch their business ideas to investors (the sharks) to get funding in exchange for a share of their company. It's known for showcasing a variety of products and services and for the intense negotiations that happen on the show.
       </p>
+      <div style="text-align: center;">
       <p style= "text-align: center; font-size: 28px;">Here is one of the episodes of the Shark Tank:</p>
       <iframe width="850" height="560" src="https://www.youtube.com/embed/Bt_igQZPEaI" frameborder="0" allowfullscreen></iframe>
-       
+       </div>
       
      <p style= "font-size: 28px;">Our goal was to "Pitch and Present" where we involve sharing an idea and software with an audience (Investors or business people) in a structured way, using visual aids like slides to explain and <u>persuade them to support, invest in, or approve the idea</u>.</p>
 
@@ -914,18 +914,14 @@ body {font-size:16px;}
      
    </div>
  
-  
- 
+   <hr style="width: 100%; border: 2px solid rgb(0, 2, 96);">
+ <br>
+ <br>
+ <br>
  <!-- End page content -->
 </div>
 
-<script>
-  window.onscroll = function() {
-    const modal = document.getElementById('disclaimerModal');
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    modal.style.transform = 'translateY(' + scrollTop + 'px)';
-  };
-</script>
+
 
 
 <script>
@@ -948,6 +944,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
+
 
 </body>
 </html>
