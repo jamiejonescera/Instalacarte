@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
 <title>Instalacarte</title>
+<link rel="icon" href="img/Instalacarte.png" type="image/png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+<div id="disclaimerModal" class="modal" style="display: block; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+  <div class="modal-content" style="background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; text-align: center;">
+    <span class="close" onclick="exitSite()" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+    <p><b>Disclaimer</b></p>
+    <p style="text-align: justify;">The activity and event that happened was for Academical purposes only. 
+      The application concept being presented is based on Instacarte, a QR Code ordering system. Our goal is to deliver the concept 
+      of pitching and presenting a software application idea. The invited investors and businesspeople 
+      were also informed of the activity. No financial transactions were involved, and we do not claim ownership of Instalacarte or 
+      intend to profit from it. All credit for the original idea goes to Instalacarte and its creators.</p>
+    <button onclick="agreeToDisclaimer()">I Agree</button>
+    <button onclick="exitSite()">I Do Not Agree</button>
+  </div>
+</div>
+
+<script>
+  function agreeToDisclaimer() {
+    document.getElementById('disclaimerModal').style.display = 'none';
+  }
+
+  function exitSite() {
+    window.location.href = 'https://www.google.com'; // Redirect to another site or close the tab
+  }
+
+  window.onload = function() {
+    document.getElementById('disclaimerModal').style.display = 'block';
+  };
+</script>
+
 <style>
     .center-image {
     width: 100px;
@@ -39,6 +70,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:5px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+
+
+.modal {
+      transition: transform 0.2s ease-out;
+    }
 </style>
 </head>
 <body>
@@ -106,22 +142,22 @@ body {font-size:16px;}
 
       <img src="img/Investors.jpg" alt="Header Image" style="width: 100%; display: block;">
       <br>
-      <p style= "font-size: 28px;">
-        "This is "Shark Tank". It is a TV show where entrepreneurs pitch their business ideas to investors (the "sharks") to get funding in exchange for a share of their company. It's known for showcasing a variety of products and services and for the intense negotiations that happen on the show.
+      <p style= "text-align: justify; font-size: 28px;">
+        "This is "Shark Tank". It is a TV show where entrepreneurs pitch their business ideas to investors (the sharks) to get funding in exchange for a share of their company. It's known for showcasing a variety of products and services and for the intense negotiations that happen on the show.
       </p>
-      <p style= "font-size: 28px;">Here is one of the episodes of the Shark Tank:</p>
+      <p style= "text-align: center; font-size: 28px;">Here is one of the episodes of the Shark Tank:</p>
       <iframe width="850" height="560" src="https://www.youtube.com/embed/Bt_igQZPEaI" frameborder="0" allowfullscreen></iframe>
        
       
-     <p style= "font-size: 28px;">Our goal was to "Pitch and Present" where we involve sharing an idea and software with an audience(Investors or business people) in a structured way, using visual aids like slides to explain and <u>persuade them to support, invest in, or approve the idea</u>.</p>
+     <p style= "font-size: 28px;">Our goal was to "Pitch and Present" where we involve sharing an idea and software with an audience (Investors or business people) in a structured way, using visual aids like slides to explain and <u>persuade them to support, invest in, or approve the idea</u>.</p>
 
     </div>
   </div>
   
 
     <!-- Preparation -->
-    <div class="w3-container" id="Preparation" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Preparation.</b></h1>
+    <div class="w3-container" id="Preparations" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Preparations.</b></h1>
       <hr style="width:50px;border:5px solid rgb(0, 179, 255)" class="w3-round">
       
       <div style="font-size: 28px;">
@@ -130,7 +166,8 @@ body {font-size:16px;}
       <table style="width: 100%;">
         <tr>
           <td style="width: 50%; vertical-align: middle;">
-            <p style="text-align: justify; font-size: 28px;">As a team, we have chosen cafe and restaurant infrastructures to observe, what are the common problems they encounter.</p>
+            <p style="text-align: justify; font-size: 28px;">As a team, we have chosen cafe and restaurant infrastructures to observe, 
+              what are the common problems they encounter.</p>
           </td>
           <td style="width: 50%; text-align: center;">
             <img src="img/jeff.jpg" alt="Header Image" style="width: 70%; display: block; margin: 0 auto;">
@@ -159,8 +196,8 @@ body {font-size:16px;}
     <p><b>Business Problem</b></p>
   </div>
 
-  <p style="text-align: justify; font-size: 28px;">We have discovered that the most common problems that these infrastures encounter are <u>ordering process</u>. Order process deals with how customers
-    make order by looking at menus, and assuring what they want to order, and sometimes they deal with standing on a line to do their order. 
+  <p style="text-align: justify; font-size: 28px;">We have discovered that the most common problems that these infrastructures encounter are <u>ordering process</u>. Order process deals with how customers
+    make order by looking at menus, and assuring what they want to order, and sometimes they deal with standing on a line to make their order. 
     This is a common issue where we also encounter. We have noticed that this <u>traditional way of ordering process</u> at a cafe or restaurant, causes the following problems:</p>
 
 
@@ -181,7 +218,7 @@ body {font-size:16px;}
       <img src="img/prop.png" alt="Header Image" style="width: 50%; display: inline-block; margin: 0 auto;">
     </div>
     <p style="text-align: justify; font-size: 28px;">We propose a <b>QR Code Ordering system</b>, that has 
-      a high chance in reducing the business problem and upgrading the ordering system of a cafe and restuarant. We believed that this solution would work, 
+      a high chance in reducing the business problem and upgrading the ordering system of a cafe and restuarant. We believed that this solution would work, we
     just needed to conduct a study to prove and present it to the investors.</p>
   
     <br>
@@ -447,7 +484,7 @@ body {font-size:16px;}
 <br>      
       <div style="text-align: center; font-size: 28px;">
         <p>After promoting the event, 10 Business people/Investors <br>has reponded to our invitation.
-          <br>The Pitching was set to be online since some investors are abroad and <br>while some are from other parts of the counrty.
+          <br>The Pitching was set to be online since some investors are abroad and while some are from other parts of the country.
         </p>
 
       </div> 
@@ -687,8 +724,8 @@ body {font-size:16px;}
   <div style="text-align: justify; font-size: 28px;">    
       However, the online segment to answer the questions stopped 
       due to zoom 40 min limit. But at the end we continued the meet on another link and proceeded to the offer 
-      where we had to give 20% of ownership of the revenue in exchange of the P 35,800.00 just incase 
-      there will be another investor/s to take share of the investment.(e.g. 20% of equity will be divided for 2 investors, who would like to invest.)
+      where <b>we had to give 20% of ownership of the revenue</b> in exchange of the P 35,800.00 <b>just incase 
+      there will be another investor/s</b> to take share of the investment.(e.g. 20% of equity will be divided for 2 investors, who would like to invest.)
 <br>
 <br>
   <div style="text-align: center;">
@@ -882,8 +919,14 @@ body {font-size:16px;}
  <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Pow-blue by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<script>
+  window.onscroll = function() {
+    const modal = document.getElementById('disclaimerModal');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    modal.style.transform = 'translateY(' + scrollTop + 'px)';
+  };
+</script>
+
 
 <script>
 // Script to open and close sidebar
